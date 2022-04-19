@@ -6,8 +6,8 @@ let pcRock=document.querySelector("#pc-rock");
 let pcScissors=document.querySelector("#pc-scissors");
 let pcPaper=document.querySelector("pc-paper");
 let pcChoice=[pcRock, pcScissors, pcPaper];
-let youWin=docuemnt.querySelector("#you-win");
-let youLose=docuemnt.querySelector("#you-lose");
+let youWin=document.querySelector("#you-win");
+let youLose=document.querySelector("#you-lose");
 let tieResult=document.querySelector("#tie");
 
 // PC choose Rock, Scissors or Paper randomly
@@ -17,6 +17,7 @@ function pcSelect(arr){
   let pcSelected=arr[randomSeed];
   // change the display of the chosen element from "none" to "block"
   pcSelected.style.display="block";
+  return pcSelected;
   }
 
 // Compare Player vs PC
@@ -48,17 +49,17 @@ function gameOutcome(player,PC){
 playerRock.addEventListener("click", ()=>{
   playerScissors.style.display="none";
   playerPaper.style.display="none";
-  pcSelect(pcChoice);
+  gameOutcome(playerRock,pcSelect(pcChoice));
 })
 
 playerScissors.addEventListener("click", ()=>{
   playerRock.style.display="none";
   playerPaper.style.display="none";
-  pcSelect(pcChoice);
+  gameOutcome(playerScissors,pcSelect(pcChoice));
 })
 
 playerPaper.addEventListener("click", ()=>{
   playerRock.style.display="none";
   playerScissors.style.display="none";
-  pcSelect(pcChoice);
+  gameOutcome(playerPaper,pcSelect(pcChoice));
 })

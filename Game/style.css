@@ -11,12 +11,27 @@ body{
   display: flex;
   justify-content: center;
 }
-.result{
-  display: none;
-}
 img:hover{
   cursor: pointer;
 }
 .pc-choice img{
   display: none;
+}
+#you-win{
+  display: none;
+  font-size: 10vw;
+  padding: 5vw;
+  text-align: center;
+}
+#you-lose{
+  display: none;
+  font-size: 10vw;
+  padding: 5vw;
+  text-align: center;
+}
+#tie{
+  display: none;
+  font-size: 10vw;
+  padding: 5vw;
+  text-align: center;
 }
