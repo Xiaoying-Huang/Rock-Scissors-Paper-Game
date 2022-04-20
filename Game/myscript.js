@@ -46,6 +46,7 @@ function gameOutcome(player,PC){
 }
 
   // Display the element chosen by player, and make those not selected disappear from the page;
+  //  Then invoke PC choice of element, after which both elements are compared to have game result.
 playerRock.addEventListener("click", ()=>{
   playerScissors.style.display="none";
   playerPaper.style.display="none";

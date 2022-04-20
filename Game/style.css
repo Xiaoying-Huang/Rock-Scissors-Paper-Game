@@ -6,10 +6,38 @@
 body{
   font-family: 'Josefin Sans', sans-serif;
 }
-
+button{
+  width: 15vw;
+  height: 8vw;
+  text-align: center;
+  font-size: 2vw;
+  border-radius: 25%;
+  background-color: silver ;
+}
+button:hover{
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+  font-size: 5vw;
+  padding: 2vw
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 1.3vw;
+}
 .container{
   display: flex;
   justify-content: center;
+}
+.play-it-again{
+  text-align: center;
+}
+img{
+  width: 10vw;
 }
 img:hover{
   cursor: pointer;
@@ -17,21 +45,22 @@ img:hover{
 .pc-choice img{
   display: none;
 }
+
 #you-win{
   display: none;
-  font-size: 10vw;
-  padding: 5vw;
+  font-size: 5vw;
+  padding: 3vw;
   text-align: center;
 }
 #you-lose{
   display: none;
   font-size: 10vw;
-  padding: 5vw;
+  padding: 3vw;
   text-align: center;
 }
 #tie{
   display: none;
   font-size: 10vw;
-  padding: 5vw;
+  padding: 3vw;
   text-align: center;
 }
