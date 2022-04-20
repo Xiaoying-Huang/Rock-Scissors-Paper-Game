@@ -35,6 +35,8 @@ p{
 }
 .play-it-again{
   text-align: center;
+  padding: 1vw;
+  display: none;
 }
 img{
   width: 10vw;
@@ -54,13 +56,13 @@ img:hover{
 }
 #you-lose{
   display: none;
-  font-size: 10vw;
+  font-size: 5vw;
   padding: 3vw;
   text-align: center;
 }
 #tie{
   display: none;
-  font-size: 10vw;
+  font-size: 5vw;
   padding: 3vw;
   text-align: center;
 }
