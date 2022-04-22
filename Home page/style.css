@@ -5,18 +5,35 @@
 }
 body{
   font-family: 'Josefin Sans', sans-serif;
-  background-image: url(../img/Paper.png), url(../img/Rock.png), url(../img/Scissors.png);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  background-image: url(../img/background.png);
+  background-repeat: repeat;
+}
+header{
+  padding: 10px;
+  font-size: 2vw;
+}
+p{
+  font-size: 1.5vw;
+  padding: 10px;
+}
+button{
+  padding: 10px;
+  font-size: 2vw;
+  border-style: dotted;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.797);
+}
+button:hover{
+  cursor: pointer;
 }
 .intro{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 5px solid #FFFF00;
+  border: 5px dashed #103d6d;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color: rgb(248, 216, 170);
+  color: black;
   text-align: center;
 }
